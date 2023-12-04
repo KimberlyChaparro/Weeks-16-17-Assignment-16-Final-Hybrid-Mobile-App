@@ -14,6 +14,8 @@ const Tab1: React.FC = () => {
       .then(data => setDataset(data)) // react state set function to populate data state var
   }, [])
 
+
+
   return (
     <IonPage>
       <IonHeader>
@@ -37,7 +39,8 @@ const Tab1: React.FC = () => {
                 <p>{item.product_name}</p>
                 <p>{item.product_inventory}</p>
                 <p>{item.product_availability}</p>
-                <div>{item.product_image}</div>
+                <img className="size-medium wp-image-{item.product_image} aligncenter\" src={item.guid} alt="" width="200" height="300" />
+                {/* <div className="card-text" dangerouslySetInnerHTML={{ __html: item.post_content }}></div> */}
                 {/* <img src={item.product_image} alt="" width="500" height="600"></img> */}
 
               </IonLabel>
