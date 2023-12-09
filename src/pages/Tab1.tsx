@@ -35,7 +35,7 @@ const Tab1: React.FC = () => {
           {dataset.map((item, index) => (
             <IonItem lines="inset" key={index}>
               <IonLabel>
-                <h4>Post title: {item.post_title}:</h4>
+                <h4>Post title: {item.post_title}</h4>
                 <p>Product name: {item.product_name}</p>
                 <p>Product inventory: {item.product_inventory}</p>
                 <p>Product availability: (1 if available, 0 if not): {item.product_availability}</p>
