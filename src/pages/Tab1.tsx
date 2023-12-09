@@ -26,7 +26,7 @@ const Tab1: React.FC = () => {
       <IonContent fullscreen>
         <IonHeader collapse="condense">
           <IonToolbar>
-            <IonTitle size="large">Things</IonTitle>
+            <IonTitle size="large">Products</IonTitle>
           </IonToolbar>
         </IonHeader>
         {/* use map() to loop through JSON array returned from WP */}

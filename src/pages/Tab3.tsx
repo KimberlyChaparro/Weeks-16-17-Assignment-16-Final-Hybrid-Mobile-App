@@ -20,26 +20,26 @@ const Tab3: React.FC = () => {
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Products</IonTitle>
+          <IonTitle>Recipients</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
         <IonHeader collapse="condense">
           <IonToolbar>
-            <IonTitle size="large">Things</IonTitle>
+            <IonTitle size="large">Recipients</IonTitle>
           </IonToolbar>
         </IonHeader>
         {/* use map() to loop through JSON array returned from WP */}
         <IonList id="products-list">
-          <IonListHeader>Products</IonListHeader>
+          <IonListHeader>Recipients</IonListHeader>
           {dataset.map((item, index) => (
             <IonItem lines="inset" key={index}>
               <IonLabel>
                 <h4>Post title: {item.post_title}:</h4>
                 <p>Region: {item.region}</p>
                 <p>Organization: {item.organization}</p>
-                <p>Email: (1 if available, 0 if not): {item.email}</p>
-                <img className="size-medium wp-image-{item.product_image} aligncenter\" src={item.guid} alt="" width="200" height="300" />
+                <p>Email: {item.email}</p>
+                <img className="size-medium wp-image-{item.product_image} aligncenter\" src={item.guid} alt="" width="15%" />
                 {/* <div className="card-text" dangerouslySetInnerHTML={{ __html: item.post_content }}></div> */}
                 {/* <img src={item.product_image} alt="" width="500" height="600"></img> */}
 
