@@ -35,10 +35,10 @@ const Tab1: React.FC = () => {
           {dataset.map((item, index) => (
             <IonItem lines="inset" key={index}>
               <IonLabel>
-                <h4>{item.post_title}</h4>
-                <p>{item.product_name}</p>
-                <p>{item.product_inventory}</p>
-                <p>{item.product_availability}</p>
+                <h4>Post title: {item.post_title}:</h4>
+                <p>Product name: {item.product_name}</p>
+                <p>Product inventory: {item.product_inventory}</p>
+                <p>Product availability: (1 if available, 0 if not): {item.product_availability}</p>
                 <img className="size-medium wp-image-{item.product_image} aligncenter\" src={item.guid} alt="" width="200" height="300" />
                 {/* <div className="card-text" dangerouslySetInnerHTML={{ __html: item.post_content }}></div> */}
                 {/* <img src={item.product_image} alt="" width="500" height="600"></img> */}
